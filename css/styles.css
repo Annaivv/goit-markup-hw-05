@@ -137,6 +137,8 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;    
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -184,11 +186,18 @@ body {
 .contact-icon {
     margin-right: 10px;
     fill: var(--primary-text-color);
+    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list a:hover .contact-icon,
 .contact-list a:focus .contact-icon {
     fill: var(--accent-color);
+}
+
+.contacts,
+.footer-contacts {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover,
@@ -393,6 +402,7 @@ body {
 
 .masters-soc-link {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .masters-soc-link:hover,
@@ -431,6 +441,8 @@ body {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -495,6 +507,8 @@ body {
 .footer-soc-link {
     fill: #FFFFFF;
     background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -526,6 +540,10 @@ body {
     line-height: 1.62;
 }
 
+.button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .button:hover,
 .button:focus {
     background-color: var(--accent-color);
@@ -542,6 +560,8 @@ body {
     width: calc((100% - 60px) / 3);
 
     background: #FFFFFF;
+
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list .item:not(:nth-child(3n)) {
